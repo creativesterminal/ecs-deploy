@@ -35,3 +35,10 @@ to deploy with the `-s` parameter.
 
 `./scripts/deploy-images.py`
 `./scripts/deploy-images.py -f /path/to/file.yaml -s auth-service`
+
+## TODO
+
+* Rollback of deploy
+* Rollback of deploy in case of error
+* Specify deploy by tag (actually works by branch)
+* Decrease the time needed to build images

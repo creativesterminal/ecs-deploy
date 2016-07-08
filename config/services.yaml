@@ -1,0 +1,42 @@
+auth-service:
+  version: v0.1
+  repository: auth-service
+  branch: master
+  container-repository: auth-service-container
+  aws-task: auth-service
+  aws-service: auth-service
+content-service:
+  version: v0.1
+  repository: content-service
+  branch: master
+  container-repository: content-service-container
+  aws-task: content-task
+  aws-service: content-service
+folder-service:
+  version: v0.1
+  repository: folder-service
+  branch: master
+  container-repository: folder-service-container
+  aws-task: folder-service
+  aws-service: folder-service
+upload-service:
+  version: v0.1
+  repository: upload-service
+  branch: master
+  container-repository: upload-service-container
+  aws-task: upload-service
+  aws-service: upload-service
+3rdparty-upload-service:
+  version: v0.1
+  repository: 3rdparty-upload-service
+  branch: master
+  container-repository: 3rdparty-upload-service-container
+  aws-task: 3rdparty-upload-service
+  aws-service: 3rdparty-upload-service
+web:
+  version: v0.1
+  repository: web
+  branch: master
+  container-repository: web-container
+  aws-task: web
+  aws-service: web-service

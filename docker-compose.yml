@@ -1,4 +1,4 @@
 ecsdeploy:
-    image: silintl/ecs-deploy
+    image: registry.stage.creativesterminal.com/tools/ecs-deploy
     env_file:
         - local.env

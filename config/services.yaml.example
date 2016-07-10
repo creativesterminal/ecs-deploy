@@ -1,0 +1,14 @@
+service:
+  version: v0.1
+  repository: repository-service
+  branch: master
+  container-repository: repository-service-container
+  aws-task: service-aws-task
+  aws-service: service-aws-service
+service2:
+  version: v0.1
+  repository: repository-service2
+  branch: master
+  container-repository: repository-service2-container
+  aws-task: service2-aws-task
+  aws-service: service2-aws-service

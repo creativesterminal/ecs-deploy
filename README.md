@@ -29,6 +29,9 @@ Terminal Registry and after this deploy it to the Amazon ECS.
 First of all, rename the file local.env.dist to local.env with `mv local.env.dist local.env`. After this,
 edit local.env and put your credentials to AWS.
 
+Then rename `config/services.yaml.example` to `config/services.yaml` and edit it to have all the services
+you will need to deploy. 
+
 After this run the deploy-images.py script to deploy new version of all the services. If you need you can
 specify where is your .yaml file with the parameter `-f` and also which services on the yaml file you want
 to deploy with the `-s` parameter.

@@ -12,6 +12,7 @@ Terminal Registry and after this deploy it to the Amazon ECS.
 
 - Docker
 - Python
+- NPM
 - [PyYAML](http://pyyaml.org/)
 - [GitPython](https://github.com/gitpython-developers/GitPython)
 

@@ -88,7 +88,7 @@ def build_images():
         if key not in services and 'all' not in services:
             continue
 
-        get_service(value['repository'], value['branch'], value['container-repository'], '.')
+        get_service(value['repository'], value['branch'], value['container-repository'], './repositories')
 
         print("> Building the image")
         image = build_image(key, value['container-repository'], value['version'])

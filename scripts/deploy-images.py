@@ -48,6 +48,9 @@ def set_services(service):
 
 
 def get_service(repository, branch, containerRepository, directory):
+    if os.path.exists(os.path.join(directory, containerRepository)):
+        rmtree(os.path.join(directory, containerRepository))
+
     print("> Cloning the {}".format(containerRepository))
     Repo.clone_from("git@github.com:creativesterminal/{}.git".format(containerRepository),
                     os.path.join(directory, containerRepository))

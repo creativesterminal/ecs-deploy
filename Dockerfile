@@ -1,5 +1,5 @@
 FROM silintl/ubuntu:14.04
-MAINTAINER Phillip Shipley <phillip_shipley@sil.org>
+MAINTAINER Creatives Terminal
 
 RUN apt-get update -y \
     && apt-get install -y \
@@ -9,7 +9,7 @@ RUN apt-get update -y \
     && easy_install pip \
     && pip install awscli
 
-COPY ecs-deploy /usr/local/bin/ecs-deploy
+COPY scripts/ecs-deploy /usr/local/bin/ecs-deploy
 
 RUN chmod a+x /usr/local/bin/ecs-deploy
 

@@ -59,7 +59,7 @@ def get_service(repository, branch, containerRepository, directory):
 
 def build_image(service, containerRepository, tag):
     if service == "web":
-        call(["npm", "install", "--prefix", os.path.join(containerRepository, service)])
+        call(["npm", "install", "--prefix", os.path.join(containerRepository, service)+os.sep])
 
     if service.endswith('-service'):
         image = "registry.stage.creativesterminal.com/services/{}:{}".format(service[:-8], tag)
